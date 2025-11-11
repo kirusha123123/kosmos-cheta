@@ -1,0 +1,59 @@
+.electric-btn {
+    /* Базовые стили кнопки */
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #285657; /* Голубая рамка как основа для "тока" */
+    cursor: pointer;
+    border-radius:6px;
+    border-color:#285657 ; 
+    position: relative; /* Важно! Для позиционирования псевдо-элементов */
+    overflow: hidden; /* Скрываем элементы, выходящие за границы кнопки */
+    transition: all 0.3s ease; /* Плавные переходы */
+    width: 80px;   /* Фиксированная ширина */
+    height: 40px;   /* Фиксированная высота */
+    font-size: 18px;
+}
+#Button1{
+    background-image: url('home.svg');
+    background-size: 35px;     
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+#Button2{
+    background-image: url('cupboard.svg');
+    background-size: 31px;     
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+
+
+
+
+.content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+width: 80%;
+max-width: 600px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: aliceblue;
+}
+.nav-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(33, 71, 71);
+    padding: 10px 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    border-radius: 6px;
+
+}
+.nav-panel.hidden {
+            transform: translateY(-100%);
+        }

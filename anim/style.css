@@ -1,0 +1,100 @@
+body{
+        background: linear-gradient(#1a1a1a, #0da59d);
+        height: auto;
+}
+body {
+            margin: 0;
+            min-height: 300vh;
+        }
+        
+#stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+        
+.star {
+    position: fixed; /* Важно: fixed чтобы звезды были на фоне */
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite;
+    pointer-events: none;
+}
+        
+@keyframes twinkle {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+        }
+        
+.content2 {
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+        }
+#rocket-svg {
+            position: fixed;
+            bottom: 100px;
+            left: 100px;
+            width: 80px; /* Настрой размер под свою SVG */
+            height: 120px;
+            transition: all 3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            z-index: 1000;
+            filter: drop-shadow(0 0 10px #00ffff);
+        }
+#saturn{
+    margin-left: 450px;
+    padding: 100;
+    background-size: cover; /* или contain, в зависимости от нужного эффекта */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    background-image:url(saturn.svg);
+}
+#earth{
+    margin-right: 1300px;
+    margin-top: 320px;
+    padding: 50;
+    background-size: cover; /* или contain, в зависимости от нужного эффекта */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-image:url(earth.svg);
+}
+#galaxy{
+    margin-right: 700px;
+    margin-top: 20px;
+    padding: 50;
+    background-size: cover; /* или contain, в зависимости от нужного эффекта */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-image:url(galaxy.svg);
+}
+#mars{
+    left: 1400px;
+    top: 500px;
+    padding: 5px;
+    background-size: cover; /* или contain, в зависимости от нужного эффекта */
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-image:url(mars.svg);
+}
+#neptune{
+    left: 1000px;
+    top: 100px;
+    padding: 5px;
+    background-size: cover; /* или contain, в зависимости от нужного эффекта */
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-image:url(neptune.svg);
+}
